@@ -39,8 +39,8 @@ public class GenerateKeyByRSA {
             // 得到私钥字符串
             String privateKeyString = Base64.encode(privateKey.getEncoded());
             // 将密钥对写入到文件
-            FileWriter pubfw = new FileWriter(filePath + "/publicKey.keystore");
-            FileWriter prifw = new FileWriter(filePath + "/privateKey.keystore");
+            FileWriter pubfw = new FileWriter(filePath + "\\publicKey.keystore");
+            FileWriter prifw = new FileWriter(filePath + "\\privateKey.keystore");
             BufferedWriter pubbw = new BufferedWriter(pubfw);
             BufferedWriter pribw = new BufferedWriter(prifw);
             pubbw.write(publicKeyString);

@@ -201,7 +201,7 @@ public class RSA {
     public static String loadPublicKeyByFile(String path) throws Exception {
         try {
             BufferedReader br = new BufferedReader(new FileReader(path
-                    + "/publicKey.keystore"));
+                    + "\\publicKey.keystore"));
             String readLine = null;
             StringBuilder sb = new StringBuilder();
             while ((readLine = br.readLine()) != null) {
@@ -251,7 +251,7 @@ public class RSA {
     public static String loadPrivateKeyByFile(String path) throws Exception {
         try {
             BufferedReader br = new BufferedReader(new FileReader(path
-                    + "/privateKey.keystore"));
+                    + "\\privateKey.keystore"));
             String readLine = null;
             StringBuilder sb = new StringBuilder();
             while ((readLine = br.readLine()) != null) {
